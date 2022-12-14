@@ -1,0 +1,15 @@
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/bin/Debug/net7.0/exp001
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/bin/Debug/net7.0/exp001.deps.json
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/bin/Debug/net7.0/exp001.runtimeconfig.json
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/bin/Debug/net7.0/exp001.dll
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/bin/Debug/net7.0/exp001.pdb
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/obj/Debug/net7.0/exp001.csproj.AssemblyReference.cache
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/obj/Debug/net7.0/exp001.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/obj/Debug/net7.0/exp001.AssemblyInfoInputs.cache
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/obj/Debug/net7.0/exp001.AssemblyInfo.cs
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/obj/Debug/net7.0/exp001.csproj.CoreCompileInputs.cache
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/obj/Debug/net7.0/exp001.dll
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/obj/Debug/net7.0/refint/exp001.dll
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/obj/Debug/net7.0/exp001.pdb
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/obj/Debug/net7.0/exp001.genruntimeconfig.cache
+/Users/nikitapopov/Downloads/GeekBR/c#/exp001/obj/Debug/net7.0/ref/exp001.dll
