@@ -20,9 +20,24 @@ while (true)
 
 
 
-for (int i = 1; i <= number1; i++)
+// for (int i = 1; i <= number1; i++)
+// {
+//     if(i%2 == 0)
+//     {
+//         Console.WriteLine(i);
+//     }
+// }
+
+if(number1%2==0)
 {
-    if(i%2 == 0)
+    for(int i = 0; i<=number1; i+=2)
+    {
+        Console.WriteLine(i);
+    }
+}
+else
+{
+    for(int i = 0; i<number1; i+=2)
     {
         Console.WriteLine(i);
     }
