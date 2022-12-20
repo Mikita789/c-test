@@ -310,5 +310,334 @@
 //     }
 // }
 
+// Pадачи на циклы
+
+// 1. Вычисляется сумма всех нечетных натуральных чисел от n1 до n2
+// (n1 и n2 вводятся с клавиатуры, цикл for).
+
+// int n1 = 0;
+// int n2 = 0;
+// bool flag = true;
+
+// while (flag)
+// {
+//     Console.Write("Введите первое число:  ");
+//     string text = Console.ReadLine();
+//     if (int.TryParse(text, out int number1))
+//     {
+//         n1 = number1;
+//         Console.WriteLine($"Число 1 -- {n1}");
+//         flag = false;
+//     }
+// }
+// flag = true;
+// while (flag)
+// {
+//     Console.Write("Введите второе число:  ");
+//     string text = Console.ReadLine();
+//     if (int.TryParse(text, out int number2))
+//     {
+//         n2 = number2;
+//         Console.WriteLine($"Число 2 -- {n2}");
+//         flag = false;
+//     }
+// }
+// if (n1%2 == 0)
+// {
+//     for (int i = n1+1; i<=n2; i+=2)
+//     {
+//         Console.WriteLine(i);
+//     }
+// }
+// else
+// {
+//     for (int i = n1; i<=n2; i+=2)
+//     {
+//         Console.WriteLine(i);
+//     }
+// }
+
+
+//  2. Вычисляется сумма квадратов n натуральных чисел, начиная с k
+// (вводятся k и n, цикл for).
+
+// int k = 0;
+// int n = 0;
+// int sum = 0;
+// bool flag = true;
+
+// while (flag)
+// {
+//     Console.Write("Введите первое число:  ");
+//     string text = Console.ReadLine();
+//     if (int.TryParse(text, out int number))
+//     {
+//         k = number;
+//         Console.WriteLine($"Число 1 -- {k}");
+//         flag = false;
+//     }
+//     else
+//     {
+//         Console.WriteLine("Не удалось определить число.");
+//     }
+// }
+// flag = true;
+
+// while (flag)
+// {
+//     Console.Write("Введите второе число:  ");
+//     string text = Console.ReadLine();
+//     if (int.TryParse(text, out int number))
+//     {
+//         n = number;
+//         Console.WriteLine($"Число 2 -- {n}");
+//         flag = false;
+//     }
+//     else
+//     {
+//         Console.WriteLine("Не удалось определить число.");
+//     }
+// }
+// for (int i = k; i<=n; i++)
+// {
+//     sum+= i*i;
+// }
+
+// Console.WriteLine($"Сумма квадратов = {sum}");
+
+
+// 3. Вычисляется и выводится в таблицу с шагом 10 км стоимость поездки
+// на автомобиле в зависимости от расстояния S (10 – 90 км). С клавиатуры
+// вводятся: b - расход бензина на 100 км, c - цена бензина за 1л литр. (цикл for)
+// double b = 0.0; //расход
+// double c = 0.0; //цена за литр
+// bool flag = true;
+
+// while (flag)
+// {
+//     Console.Write("Введите первое число (расход бензина на 100 км):  ");
+//     string text = Console.ReadLine();
+//     if (double.TryParse(text, out double number))
+//     {
+//         b = number;
+//         Console.WriteLine($"Расход -- {b}");
+//         flag = false;
+//     }
+//     else
+//     {
+//         Console.WriteLine("Не удалось определить число.");
+//     }
+// }
+// flag = true;
+
+// while (flag)
+// {
+//     Console.Write("Введите второе число (цена бензина за литр):  ");
+//     string text = Console.ReadLine();
+//     if (double.TryParse(text, out double number))
+//     {
+//         c = number;
+//         Console.WriteLine($"Цена за литр -- {c}");
+//         flag = false;
+//     }
+//     else
+//     {
+//         Console.WriteLine("Не удалось определить число.");
+//     }
+// }
+
+// for (int i = 10; i<=90; i+=10)
+// {
+//     string s = "";
+//     s = $"|| {i} | {double.Round(((b/100)*(i)*(c)),2)} ||";
+//     Console.WriteLine(s);
+// }
+
+
+
+
+// 4. В интервале [0, 2 c] с шагом 0.1с вычисляются координаты y = V0 t – g t
+// 2
+// / 2
+// и скорости V = V0 – g t мячика, брошеного вертикально вверх с начальной
+
+// bool flag = true;
+// double v0 = 0.0;
+// double g = 9.78;
+
+// while (flag)
+// {
+//     Console.Write("Введите скорость (м/с):  ");
+//     string text = Console.ReadLine();
+//     if (double.TryParse(text, out double number))
+//     {
+//         v0 = number;
+//         Console.WriteLine($"Вы ввели -- {v0}");
+//         flag = false;
+//     }
+//     else
+//     {
+//         Console.WriteLine("Не удалось определить число.");
+//     }
+// }
+
+// for (double t = 0; t<=2.0; t+=0.1)
+// {
+//     string s = $"Координата в t({double.Round(t,2)}) = {double.Round((v0*t - ((g*(t*t))/2)),3)}\nCкорость V равна = {double.Round((v0 - g*t),2)}";
+//     Console.WriteLine(s);
+//     Console.WriteLine("\n");
+// }
+
+
+// 5. Повторяются вычисления и вывод площади круга по вводимому радиусу r
+// до тех пор, пока не введена буква z или Z .
+
+// bool flag = true;
+// double p = 3.14;
+// double r = 0;
+
+// while (flag)
+// {
+//     Console.Write("Введите r: ");
+//     string text = Console.ReadLine();
+//     if (double.TryParse(text, out double number))
+//     {
+//         r = number;
+//         Console.WriteLine($"Площадь круга с радиусом {number} равна {p*(r*r)}");
+//     }
+//     if (text.ToLower() == "z")
+//     {
+//         Console.WriteLine("exit");
+//         flag = false;
+//     }
+// }
+
+// 6. Генерируется 8 случайных чисел в интервале (– 30, 30). Выводятся эти числа
+// и сообщения: отрицательное – положительное, четное – нечетное ( for, if ).
+// int number = 0;
+// string mes1 = "";
+// string mes2 = "";
+
+
+// for (int i = 0; i<8; i++)
+// {
+//     number = new Random().Next(-30, 30);
+//     if (number%2==0) {mes1 = " четное";}
+//     else {mes1 = " нечетное";}
+//     if (number>=0) {mes2 = $"{number}: положительное и";}
+//     else {mes2 = $"{number}: отрицательное и";}
+//     Console.WriteLine(mes2 + mes1);
+// }
+
+
+// 7. Генерируется 10 случайных чисел в интервале (– 20, 20). Выводятся только
+// положительные числа и сообщения: четное - нечетное ( for, if ).
+
+// int randNumb = 0;
+
+// for (int i = 0; i<10; i++)
+// {
+//     randNumb = new Random().Next(-20, 20);
+//     if (randNumb>=0) {if (randNumb%2 == 0){Console.WriteLine($"{randNumb} четное");}
+//                       else {Console.WriteLine($"{randNumb} нечетное");};}
+// }
+
+
+// 8. Генерируются случайные числа в интервале (– 40, 40) до тех пор,
+// пока очередное число не превышает 30. Выводятся только нечетные числа
+// и сообщения: отрицательное – положительное ( while, if ).
+
+// int number = 0;
+// bool flag = true;
+// string mes = "";
+// string[] x1 = {"положительное", "отрицательное"};
+
+
+// while (flag)
+// {
+//     number  = new Random().Next(-40, 40);
+//     if (number<30) 
+//     {
+//         if (number%2!=0)
+//         {
+//             mes = $"{number} -- {(number>=0 ? x1[0]:x1[1])}";
+//             Console.WriteLine(mes);
+//         }
+//     }
+//     else {flag = false; break;}
+// }
+
+// 9. Генерируются случайные числа в интервале (0, 20) до тех пор,
+// пока их сумма не превысит S (вводится с клавиатуры).
+// Нумеруются и выводятся эти числа и их сумма ( while, if ).
+
+// int sum = 0;
+// int currentSum =0;
+// bool flag = true;
+// int count = 0;
+
+// while (flag)
+// {
+//     Console.Write("Введите требуемую сумму: ");
+//     string text = Console.ReadLine();
+//     if (int.TryParse(text, out int number))
+//     {
+//         sum = number;
+//         flag = false;
+//     }
+//     else {Console.WriteLine("Не удалось распознать число");}
+// }
+
+// while (currentSum<=sum)
+// {
+//     int n = new Random().Next(0, 20);
+//     currentSum+=n;
+//     Console.WriteLine($"{count+1}. случайное число {n}. Текущая сумма = {currentSum}");
+//     count+=1;
+// }
+
+// 10. Ежедневно количество бактерий увеличивается на p процентов.
+// Через сколько дней количество бактерий увеличится в n раз (ввод p и n ).
+
+
+// double p = 0;
+// double n = 0;
+// bool flag = true;
+// int count = 0;
+// double start = 1;
+// double res = start;
+
+
+// while (flag)
+// {
+//     Console.Write("Введите число процентов Р: ");
+//     string text = Console.ReadLine();
+//     if (double.TryParse(text, out double number))
+//     {
+//         p = number;
+//         flag = false;
+//     }
+//     else {Console.WriteLine("Не удалось распознать число");}
+// }
+
+// flag = true;
+
+// while (flag)
+// {
+//     Console.Write("Введите искомое число раз N: ");
+//     string text = Console.ReadLine();
+//     if (double.TryParse(text, out double number))
+//     {
+//         n = number;
+//         flag = false;
+//     }
+//     else {Console.WriteLine("Не удалось распознать число");}
+// }
+// while (res<start*n)
+// {
+//     res = res + res*p/100;
+//     count++;
+// }
+// Console.WriteLine($"{count} дней понадобится, чтобы число выросло в {n} раз");
 
 
