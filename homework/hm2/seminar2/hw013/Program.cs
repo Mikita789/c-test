@@ -17,7 +17,7 @@ while (flag)
         }
         else
         {
-            Console.WriteLine("Введенное число не содержит 3х чисел");
+            Console.WriteLine("Нет 3ей цифры");
             
         }
         

@@ -7,7 +7,7 @@ while(flag)
 {
     Console.Write("Введите 3х значное число: ");
     string text = Console.ReadLine();
-    if(int.TryParse(text, out int number))
+    if (int.TryParse(text, out int number))
     {
         numb = number;
         flag = false;
