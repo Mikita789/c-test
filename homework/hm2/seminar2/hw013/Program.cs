@@ -10,9 +10,9 @@ while (flag)
     {
         numb = number;
         Console.WriteLine($"Вы ввели чсло = {numb}");
-        if (number.ToString().Length == 3)
+        if (number.ToString().Length >= 3)
         {
-            Console.WriteLine($"Третья цифра введенного числа: {numb.ToString()[^1]}");
+            Console.WriteLine($"Третья цифра введенного числа: {numb.ToString()[2]}");
             flag = false;
         }
         else
