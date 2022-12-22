@@ -51,7 +51,7 @@
 // }
 
 
-// в виде функции
+// в виде функций
 
 int CheckNumberInt (string message)
 {
@@ -73,8 +73,8 @@ int CheckNumberInt (string message)
     
 }
 
-int x = CheckNumberInt("Введите число 1:");
-int y = CheckNumberInt("Введите число 2:");
+int x = CheckNumberInt("Введите число 1:  ");
+int y = CheckNumberInt("Введите число 2:  ");
 
 string CheckCoord (int x, int y)
 {
