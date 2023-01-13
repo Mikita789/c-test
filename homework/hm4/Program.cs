@@ -66,4 +66,29 @@ int CheckNumberInt (string message)
 // }
 // Console.WriteLine(SumOfDigits2(a));
 
+// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+// 6, 1, 33 -> [6, 1, 33]
 
+int[] RandomIntArr(int count, int startInt, int finishInt)
+{
+    int[] result = new int[count];
+    for ( int i = 0; i < count; i++)
+    {
+        result[i] = new Random().Next(startInt,finishInt);
+    }
+    return result;
+}
+
+void PrintArr<T>(ref T[] arr)
+{
+    Console.Write("Cгенерированный массив: ");
+    foreach (T i in arr)
+    {
+        Console.Write($"{i} ");
+    }
+}
+
+int[] randArr = RandomIntArr(8, 10, 99);
+
+PrintArr(ref randArr);
