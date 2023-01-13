@@ -24,9 +24,12 @@ int CheckNumberInt (string message)
     return result;
 }
 
-// int a = CheckNumberInt("Введите число 1 ");
-// int b = CheckNumberInt("Введите число 2 ");
+//  int a = CheckNumberInt("Введите число 1 ");
+//  int b = CheckNumberInt("Введите число 2 ");
+//  //способ 1
+//  Console.WriteLine($"Число 1({a}) в степени числа 2({b}) равно {Math.Pow(a,b)}");
 
+//способ 2
 // int Exp (int x1, int x2)
 // {
 //     int result = x1;
@@ -38,6 +41,9 @@ int CheckNumberInt (string message)
 // }
 // Console.Write($"Число А({a}) в степени числа B({b}): ");
 // Console.WriteLine(Exp(a,b));
+
+
+
 
 
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
@@ -66,29 +72,33 @@ int CheckNumberInt (string message)
 // }
 // Console.WriteLine(SumOfDigits2(a));
 
+
+
+
+
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-int[] RandomIntArr(int count, int startInt, int finishInt)
-{
-    int[] result = new int[count];
-    for ( int i = 0; i < count; i++)
-    {
-        result[i] = new Random().Next(startInt,finishInt);
-    }
-    return result;
-}
+// int[] RandomIntArr(int count, int startInt, int finishInt)
+// {
+//     int[] result = new int[count];
+//     for ( int i = 0; i < count; i++)
+//     {
+//         result[i] = new Random().Next(startInt,finishInt);
+//     }
+//     return result;
+// }
 
-void PrintArr<T>(ref T[] arr)
-{
-    Console.Write("Cгенерированный массив: ");
-    foreach (T i in arr)
-    {
-        Console.Write($"{i} ");
-    }
-}
+// void PrintArr<T>(ref T[] arr)
+// {
+//     Console.Write("Cгенерированный массив: ");
+//     foreach (T i in arr)
+//     {
+//         Console.Write($"{i} ");
+//     }
+// }
 
-int[] randArr = RandomIntArr(8, 10, 99);
+// int[] randArr = RandomIntArr(8, 10, 99);
 
-PrintArr(ref randArr);
+// PrintArr(ref randArr);
