@@ -64,7 +64,7 @@ int CheckNumberInt (string message)
 //     return result;
 // }
 
-// //Console.WriteLine($"Cумма цифр числа({a}) равна {SumOfDigits(a)}");
+// Console.WriteLine($"Cумма цифр числа({a}) равна {SumOfDigits(a)}");
 // // способ 2 OneLine
 // int SumOfDigits2(int x)
 // {
