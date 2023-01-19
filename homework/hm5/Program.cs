@@ -11,7 +11,7 @@ int[] RandomIntArr(int count, int startInt, int finishInt)
     return result;
 }
 
-void PrintArr<T>(ref T[] arr)
+void PrintArr<T>(T[] arr)
 {
     Console.Write("Cгенерированный массив: ");
     foreach (T i in arr)
@@ -62,7 +62,7 @@ void PrintArr<T>(ref T[] arr)
 //Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
 int[] arr = RandomIntArr(10, 10, 100);
-PrintArr(ref arr);
+PrintArr(arr);
 //способ 1
 //Console.WriteLine($"максимальный элемент = {arr.Max()}, минимальный элемент = {arr.Min()}, макс - мин = {arr.Max() - arr.Min()}");
 
@@ -71,19 +71,16 @@ PrintArr(ref arr);
 //Console.WriteLine($"максимальный элемент = {arr[^1]}, минимальный элемент = {arr[0]}, макс - мин = {arr[^1] - arr[0]}");
 
 //способ 3
-// int max = arr[0];
-// int min = arr[0];
-// for (int i = 0; i < arr.Length; i++)
-// {
-//     if (arr[i] > max)
-//     {
-//         max = arr[i];
-//     }
-//     if (arr[i] < min)
-//     {
-//         min = arr[i];
-//     }
-// }
-// Console.WriteLine($"max = {max}, min = {min}.   {max - min}");
+int max = arr[0];
+int min = arr[0];
+for (int i = 0; i < arr.Length; i++)
+{
+    if (arr[i] > max)
+    {
+        max = arr[i];
+    }
+    else {min = arr[i];}
+}
+Console.WriteLine($"max = {max}, min = {min}.   {max - min}");
 
 
