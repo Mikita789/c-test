@@ -1,4 +1,13 @@
-﻿int[,] CreateTwoDimensioalnArr(int str , int col)
+﻿void PrintArr<T>(T[] arr)
+{
+    Console.Write("Cгенерированный массив: ");
+    foreach (T i in arr)
+    {
+        Console.Write($"{i} ");
+    }
+    Console.WriteLine();
+}
+int[,] CreateTwoDimensioalnArr(int str , int col)
 {
     int[,] arr = new int[str, col];
     for (int i = 0; i < str; i++)
@@ -68,9 +77,9 @@ void PrintArr2<T>(T[,] arr)
 
 // int userStr = CheckNumberInt("Введите строку     ");
 // int userCol = CheckNumberInt("Введите столбец     ");
-Random rand = new Random();
-int[,] arr =CreateTwoDimensioalnArr(rand.Next(3,10) , rand.Next(3,10));
-PrintArr2(arr);
+// Random rand = new Random();
+// int[,] arr =CreateTwoDimensioalnArr(rand.Next(3,10) , rand.Next(3,10));
+// PrintArr2(arr);
 
 // void PrintSelectedItem(int[,] array, int positionStr, int positionCol)
 // {
@@ -84,7 +93,7 @@ PrintArr2(arr);
 
 //если принимаем от пользователя порядковый номер
 
- int number = CheckNumberInt("Введите порядковый номер элемента    ");
+//int number = CheckNumberInt("Введите порядковый номер элемента    ");
 
 // void PrintSelectedItem2(int[,] array , int position)
 // {
@@ -108,19 +117,39 @@ PrintArr2(arr);
 // }
 // PrintSelectedItem2(arr, number);
 
-void PrintSelectedItem3(int[,] array, int position)
-{
-    int strElement = position % arr.GetLength(1) == 0 ? position/arr.GetLength(1) -1 : position/arr.GetLength(1) ;
-    int colElement = position - (strElement) * arr.GetLength(1) - 1;
-    Console.WriteLine(arr[strElement, colElement]);
-}
-PrintSelectedItem3(arr, number);
+//ниже на мой взгляд лучшая реализация, т.к. вычисляет сразу без перебора в цикле
+// void PrintSelectedItem3(int[,] array, int position)
+// {
+//     int strElement = position % arr.GetLength(1) == 0 ? position/arr.GetLength(1) -1 : position/arr.GetLength(1) ;
+//     int colElement = position - (strElement) * arr.GetLength(1) - 1;
+//     Console.WriteLine(arr[strElement, colElement]);
+// }
+// PrintSelectedItem3(arr, number);
 
 
+//Задача 52: Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
+// int[,] arr = CreateTwoDimensioalnArr(5,3);
+// PrintArr2(arr);
+// double[] MeanOfColumns(int[,] array)
+// {
+//     double[] res = new double[array.GetLength(1)];
+//     for (int i = 0; i < array.GetLength(1); i++)
+//     {
+//         int sum = 0;
+//         for (int j = 0; j < array.GetLength(0); j++)
+//         {
+//             sum += array[j,i];
+//         }
+//         res[i] = Convert.ToDouble(sum) / Convert.ToDouble(array.GetLength(0));
+//         sum = 0;
+//     }
+//     return res;
+// }
 
-
-
+// double[] result = MeanOfColumns(arr);
+// Console.WriteLine("Средние велечина по столбцам    ");
+// PrintArr(result);
 
 
 
