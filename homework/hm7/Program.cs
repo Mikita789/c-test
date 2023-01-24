@@ -51,23 +51,23 @@ void PrintArr2<T>(T[,] arr)
     }
 }
 // Задача 47: Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
-// int str = CheckNumberInt("Введите число строк    ");
-// int columns = CheckNumberInt("Введите число столбцов    ");
+int str = CheckNumberInt("Введите число строк    ");
+int columns = CheckNumberInt("Введите число столбцов    ");
 
-// double[,] CreateTwoDimensioalnArrDouble(int str , int col)
-// {
-//     double[,] arr = new double[str, col];
-//     for (int i = 0; i < str; i++)
-//     {
-//         for (int j = 0; j < col; j++)
-//         {
-//             arr[i, j] = Math.Round(new Random().Next(10, 100) + new Random().NextDouble(),3);
-//         }
-//     }
-//     return arr;
-// }
-// double[,] arrDouble = CreateTwoDimensioalnArrDouble(str, columns);
-// PrintArr2(arrDouble);
+double[,] CreateTwoDimensioalnArrDouble(int str , int col)
+{
+    double[,] arr = new double[str, col];
+    for (int i = 0; i < str; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            arr[i, j] = Math.Round(new Random().Next(10, 100) + new Random().NextDouble(),3);
+        }
+    }
+    return arr;
+}
+double[,] arrDouble = CreateTwoDimensioalnArrDouble(str, columns);
+PrintArr2(arrDouble);
 
 
 //Задача 50: Напишите программу, которая на вход принимает позиции элемента в двумерном массиве,
