@@ -45,29 +45,29 @@ void PrintArr2<T>(T[,] arr)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            Console.Write($"{arr[i, j]}  ");
+            Console.Write($"{arr[i, j]}" + new string(' ', 8 - arr[i,j].ToString().Length));
         }
         Console.WriteLine();
     }
 }
 // Задача 47: Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
-int str = CheckNumberInt("Введите число строк    ");
-int columns = CheckNumberInt("Введите число столбцов    ");
+// int str = CheckNumberInt("Введите число строк    ");
+// int columns = CheckNumberInt("Введите число столбцов    ");
 
-double[,] CreateTwoDimensioalnArrDouble(int str , int col)
-{
-    double[,] arr = new double[str, col];
-    for (int i = 0; i < str; i++)
-    {
-        for (int j = 0; j < col; j++)
-        {
-            arr[i, j] = Math.Round(new Random().Next(10, 100) + new Random().NextDouble(),3);
-        }
-    }
-    return arr;
-}
-double[,] arrDouble = CreateTwoDimensioalnArrDouble(str, columns);
-PrintArr2(arrDouble);
+// double[,] CreateTwoDimensioalnArrDouble(int str , int col)
+// {
+//     double[,] arr = new double[str, col];
+//     for (int i = 0; i < str; i++)
+//     {
+//         for (int j = 0; j < col; j++)
+//         {
+//             arr[i, j] = Math.Round(new Random().Next(10, 100) + new Random().NextDouble(),2);
+//         }
+//     }
+//     return arr;
+// }
+// double[,] arrDouble = CreateTwoDimensioalnArrDouble(str, columns);
+// PrintArr2(arrDouble);
 
 
 //Задача 50: Напишите программу, которая на вход принимает позиции элемента в двумерном массиве,
@@ -78,22 +78,24 @@ PrintArr2(arrDouble);
 // int userStr = CheckNumberInt("Введите строку     ");
 // int userCol = CheckNumberInt("Введите столбец     ");
 // Random rand = new Random();
-// int[,] arr =CreateTwoDimensioalnArr(rand.Next(3,10) , rand.Next(3,10));
+// int[,] arr = CreateTwoDimensioalnArr(rand.Next(3,10) , rand.Next(3,10));
 // PrintArr2(arr);
 
 // void PrintSelectedItem(int[,] array, int positionStr, int positionCol)
 // {
 //     if (array.GetLength(0) >= positionStr-1 && array.GetLength(1) >= positionCol-1)
 //     {
-//         Console.WriteLine(array[positionStr-1, positionCol-1]);
+//         Console.WriteLine($"Искомый элемент:  {array[positionStr-1, positionCol-1]}");
 //     }
 //     else {Console.WriteLine("Элемента не обнаружено");}
 // }
 // PrintSelectedItem(arr, userStr, userCol);
 
 //если принимаем от пользователя порядковый номер
-
-//int number = CheckNumberInt("Введите порядковый номер элемента    ");
+// Random rand = new Random();
+// int[,] arr = CreateTwoDimensioalnArr(rand.Next(3,10) , rand.Next(3,10));
+// PrintArr2(arr);
+// int number = CheckNumberInt("Введите порядковый номер элемента    ");
 
 // void PrintSelectedItem2(int[,] array , int position)
 // {
@@ -118,6 +120,11 @@ PrintArr2(arrDouble);
 // PrintSelectedItem2(arr, number);
 
 //ниже на мой взгляд лучшая реализация, т.к. вычисляет сразу без перебора в цикле
+// Random rand = new Random();
+// int[,] arr = CreateTwoDimensioalnArr(rand.Next(3,10) , rand.Next(3,10));
+// PrintArr2(arr);
+// int number = CheckNumberInt("Введите порядковый номер элемента    ");
+
 // void PrintSelectedItem3(int[,] array, int position)
 // {
 //     int strElement = position % arr.GetLength(1) == 0 ? position/arr.GetLength(1) -1 : position/arr.GetLength(1) ;
