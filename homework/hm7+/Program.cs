@@ -7,7 +7,7 @@
     }
     Console.WriteLine();
 }
-int[,] CreateTwoDimensioalnArr(int str , int col , int startInt, int finishInt)// создание двумерного массива
+int[,] CreateTwoDimensioalnArr(int str, int col, int startInt, int finishInt)// создание двумерного массива
 {
     int[,] arr = new int[str, col];
     for (int i = 0; i < str; i++)
@@ -19,7 +19,7 @@ int[,] CreateTwoDimensioalnArr(int str , int col , int startInt, int finishInt)/
     }
     return arr;
 }
-int CheckNumberInt (string message) // ввод числа пользователем
+int CheckNumberInt(string message) // ввод числа пользователем
 {
     bool flag = true;
     int result = 0;
@@ -34,7 +34,7 @@ int CheckNumberInt (string message) // ввод числа пользовате�
             Console.WriteLine($"Вы ввели {result}");
             flag = false;
         }
-        else {Console.WriteLine($"Не удалось распознать число. Попробуйте снова.");}
+        else { Console.WriteLine($"Не удалось распознать число. Попробуйте снова."); }
     }
     return result;
 }
@@ -45,7 +45,7 @@ void PrintArr2<T>(T[,] arr) //принт двумерный массив
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            Console.Write($"{arr[i, j]}"+new string(' ', 6-arr[i, j].ToString().Length));
+            Console.Write($"{arr[i, j]}" + new string(' ', 6 - arr[i, j].ToString().Length));
         }
         Console.WriteLine();
     }
