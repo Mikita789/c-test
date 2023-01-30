@@ -202,46 +202,46 @@ void PrintArr2<T>(T[,] arr) //принт двумерный массив
 //Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 
 //создадим массив чисел для трехмерного массива
-int x = 2;
-int y = 2;
-int k = 2;
-Random rand = new Random();
+// int x = 2;
+// int y = 2;
+// int k = 2;
+// Random rand = new Random();
 
-int[] numbers = new int[x * y * k];
-int count = 0;
-while (numbers.Distinct().ToArray().Length < numbers.Length)
-{
-    int temp = rand.Next(10,100);
-    if (!numbers.Contains(temp))
-    {
-        numbers[count] = temp; 
-        count++;
-    }
-}
-//заполняем последнее значение равное 0
-int temp2 = rand.Next(10,100);
-while (numbers.Contains(temp2))
-{
-    temp2 = rand.Next(10,100);
-}
-numbers[^1] = temp2;
-PrintArr(numbers);
+// int[] numbers = new int[x * y * k];
+// int count = 0;
+// while (numbers.Distinct().ToArray().Length < numbers.Length)
+// {
+//     int temp = rand.Next(10,100);
+//     if (!numbers.Contains(temp))
+//     {
+//         numbers[count] = temp; 
+//         count++;
+//     }
+// }
+// //заполняем последнее значение равное 0
+// int temp2 = rand.Next(10,100);
+// while (numbers.Contains(temp2))
+// {
+//     temp2 = rand.Next(10,100);
+// }
+// numbers[^1] = temp2;
+// PrintArr(numbers);
 
-int[,,] arr = new int[x, y, k];
-int position = 0;
-for (int i = 0; i < x; i++)
-{
-    for (int j = 0; j < y; j++)
-    {
-        for (int c = 0; c < k; c++)
-        {
-            arr[i,j,c] = numbers[position];
-            Console.Write($"{arr[i,j,c]} index = ({i},{j},{c})  ");
-            position++;
-        }
-        Console.WriteLine();
-    }
-}
+// int[,,] arr = new int[x, y, k];
+// int position = 0;
+// for (int i = 0; i < x; i++)
+// {
+//     for (int j = 0; j < y; j++)
+//     {
+//         for (int c = 0; c < k; c++)
+//         {
+//             arr[i,j,c] = numbers[position];
+//             Console.Write($"{arr[i,j,c]} index = ({i},{j},{c})  ");
+//             position++;
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
 
 
